@@ -1,0 +1,17 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    @for (int i = 0; i < 15; i++)
+    {
+        <div>@Guid.NewGuid()</div>
+    }
+    <div><a href="http://www.contpaqi.com" target="_blank">Contpaqi</a></div>
+    <div><a href="/Products/Index" target="_blank">Ir a Productos</a></div>
+</div>
